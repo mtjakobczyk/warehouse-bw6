@@ -12,6 +12,7 @@
     xmlns:ns3="http://www.mtjakobczyk.pl/Schemas/DictionaryFrontend"
     xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jdbc+2f40a1fa-c5dd-4b6c-9e7d-ce6c0be3328c+input"
     xmlns:ns5="http://www.tibco.com/namespaces/tnt/plugins/jdbc+2f40a1fa-c5dd-4b6c-9e7d-ce6c0be3328c+output"
+    xmlns:ns6="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -171,6 +172,21 @@
                                 </sequence>
                             </complexType>
                         </element>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
+        <schema
+            targetNamespace="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions">
+            <element name="DefaultFault">
+                <complexType>
+                    <sequence>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="message" type="string"/>
+                        <element maxOccurs="1" minOccurs="0"
+                            name="msgCode" type="string"/>
                     </sequence>
                 </complexType>
             </element>
@@ -517,6 +533,42 @@
                                     x="673"
                                     xsi:type="notation:Bounds" y="122"/>
                                     </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName=".SF NS Text"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName=".SF NS Text"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName=".SF NS Text"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName=".SF NS Text"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles
+                                    fontName=".SF NS Text"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
+                                    <layoutConstraint x="673"
+                                    xsi:type="notation:Bounds" y="200"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -529,7 +581,7 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="239"
+                                    <layoutConstraint height="332"
                                     width="853" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
@@ -558,7 +610,7 @@
             </children>
             <styles fontName=".SF NS Text" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="315" width="1198" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="408" width="1198" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -621,7 +673,7 @@
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
             <children type="6002">
-                <layoutConstraint x="-2" xsi:type="notation:Location" y="11"/>
+                <layoutConstraint x="33" xsi:type="notation:Location" y="-9"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
@@ -639,6 +691,18 @@
             <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.6"/>
             <bendpoints points="[25, -4, -94, 0]$[95, 0, -24, 4]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
+            <children type="6002">
+                <layoutConstraint x="53" xsi:type="notation:Location" y="-11"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints
+                points="[25, 0, -364, -171]$[58, 0, -331, -171]$[58, 171, -331, 0]$[365, 171, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" namespace="http://www.mtjakobczyk.pl/contracts/DictionaryFrontend/"/>
@@ -674,6 +738,8 @@
             name="LogNoData-input" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns1:getStationFault"
             name="getStationNotFoundOut-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:DefaultFault"
+            name="ThrowMultipleResults-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -695,6 +761,8 @@
                 <bpws:link name="QueryForStationsToLog_Otherwise"
                     tibex:label="Otherwise" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                 <bpws:link name="LogNoDataToReply" tibex:linkType="SUCCESS"/>
+                <bpws:link name="Multiple Rows_MultipleRows"
+                    tibex:label="Multiple Rows" tibex:linkType="SUCCESSWITHCONDITION"/>
             </bpws:links>
             <bpws:receive createInstance="yes" name="getStationIn"
                 operation="getStation" partnerLink="IDictionary"
@@ -836,9 +904,9 @@
                         <bpws:source linkName="JDBCQueryToPrepareResult_OneRow">
                             <tibex:DesignExpression>
                                 <tibex:expression
-                                    expression="count($QueryForStations/Record)>0" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    expression="count($QueryForStations/Record)=1" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                             </tibex:DesignExpression>
-                            <bpws:transitionCondition><![CDATA[count($QueryForStations/Record)>0]]></bpws:transitionCondition>
+                            <bpws:transitionCondition><![CDATA[count($QueryForStations/Record)=1]]></bpws:transitionCondition>
                         </bpws:source>
                         <bpws:source linkName="QueryForStationsToLog_Otherwise">
                             <tibex:DesignExpression>
@@ -846,6 +914,13 @@
                                     expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                             </tibex:DesignExpression>
                             <bpws:transitionCondition><![CDATA[##otherwise##]]></bpws:transitionCondition>
+                        </bpws:source>
+                        <bpws:source linkName="Multiple Rows_MultipleRows">
+                            <tibex:DesignExpression>
+                                <tibex:expression
+                                    expression="count($QueryForStations/Record)>1" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            </tibex:DesignExpression>
+                            <bpws:transitionCondition><![CDATA[count($QueryForStations/Record)>1]]></bpws:transitionCondition>
                         </bpws:source>
                     </bpws:sources>
                     <tibex:inputBindings>
@@ -930,6 +1005,19 @@
                     <bpws:target linkName="LogNoDataToReply"/>
                 </bpws:targets>
             </bpws:reply>
+            <bpws:throw faultName="ns6:DefaultFault"
+                faultVariable="ThrowMultipleResults-input"
+                name="ThrowMultipleResults" tibex:xpdlId="76932330-3a02-4176-8911-d743ec0af50b">
+                <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions" xmlns:tns1="http://www.mtjakobczyk.pl/Schemas/DictionaryFrontend" version="2.0"&gt;&lt;xsl:param name="getStationIn"/&gt;&lt;xsl:template name="ThrowMultipleResults-input" match="/"&gt;&lt;tns:DefaultFault&gt;&lt;message&gt;&lt;xsl:value-of select="'WHS/ESB/0014'"/&gt;&lt;/message&gt;&lt;msgCode&gt;&lt;xsl:value-of select="concat('Station with code: [',$getStationIn/input/tns1:getStation/tns1:stationCode,'] - multiple results returned.')"/&gt;&lt;/msgCode&gt;&lt;/tns:DefaultFault&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+                <tibex:inputBindings>
+                    <tibex:partBinding
+                        expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; xmlns:tns1=&quot;http://www.mtjakobczyk.pl/Schemas/DictionaryFrontend&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;getStationIn.input&quot;/>&#xa;    &lt;xsl:template name=&quot;ThrowMultipleResults-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:DefaultFault>&#xa;            &lt;message>&#xa;                &lt;xsl:value-of select=&quot;'WHS/ESB/0014'&quot;/>&#xa;            &lt;/message>&#xa;            &lt;msgCode>&#xa;                &lt;xsl:value-of select=&quot;concat('Station with code: [',$getStationIn.input/tns1:stationCode,'] - multiple results returned.')&quot;/>&#xa;            &lt;/msgCode>&#xa;        &lt;/tns:DefaultFault>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                </tibex:inputBindings>
+                <bpws:targets>
+                    <bpws:target linkName="Multiple Rows_MultipleRows"/>
+                </bpws:targets>
+            </bpws:throw>
         </bpws:flow>
     </bpws:scope>
 </bpws:process>
