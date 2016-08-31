@@ -73,45 +73,5 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
-		<globalVariable>
-			<name>/Dictionary/Port</name>
-			<value>9005</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>/JDBC/User</name>
-			<value>esb</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>/JDBC/Password</name>
-			<value>#!5O5KVwN94Bd9ohpfMT1XpUaYAlzq9VWg</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Password</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>/JDBC/URL</name>
-			<value>jdbc:oracle:thin:@warsaw:1521:WAWDB</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>/JDBC/Driver</name>
-			<value>oracle.jdbc.OracleDriver</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-		</globalVariable>
 	</globalVariables>
 </repository>

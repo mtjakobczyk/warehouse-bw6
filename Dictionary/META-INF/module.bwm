@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:DictionaryFrontend="http://www.mtjakobczyk.pl/contracts/DictionaryFrontend/" xmlns:DictionaryFrontend_1="http://www.mtjakobczyk.pl/Schemas/DictionaryFrontend" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_-EyvgG95EeaZT7BCKXUdZQ" targetNamespace="http://tns.tibco.com/bw/composite/Dictionary" name="Dictionary" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_dSik8G96EeaZT7BCKXUdZQ" name="IDictionary" promote="ComponentDictionaryServiceProcess/IDictionary">
+    <sca:interface.wsdl xmi:id="_dSndcG96EeaZT7BCKXUdZQ" interface="http://www.mtjakobczyk.pl/contracts/DictionaryFrontend/#wsdl.interface(IDictionary)" scaext:wsdlLocation="../../WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_Q0yY4G98EeaZT7BCKXUdZQ" name="SOAPBinding" targetNamespace="http://www.tibco.com/dbcd9f5219214b30bb051b4e0604a932/SOAPServiceBinding" portTypeQName="DictionaryFrontend:IDictionary" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl">
+      <bindingType xmi:id="_Q034cG98EeaZT7BCKXUdZQ"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_TiO2kG98EeaZT7BCKXUdZQ" endpointURI="/Warehouse/DictionaryFrontend/" httpConnector="warehouseshared.DictionaryHTTPConnector"/>
+      <operationConfiguration xmi:id="_Q05toG98EeaZT7BCKXUdZQ" operationName="getStation" action="getStation" actionNeeded="true">
+        <bindingType xmi:id="_Q05toW98EeaZT7BCKXUdZQ"/>
+        <messageConfiguration xmi:id="_Q05tom98EeaZT7BCKXUdZQ" messageQName="DictionaryFrontend:getStation" wsdlLocation="platform:/resource/WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_Q05to298EeaZT7BCKXUdZQ" partName="input" partElementName="DictionaryFrontend_1:getStation"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_Q05tpG98EeaZT7BCKXUdZQ" messageQName="DictionaryFrontend:getStationResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_Q05tpW98EeaZT7BCKXUdZQ" partName="output" partElementName="DictionaryFrontend_1:getStationResponse"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_Q05tpm98EeaZT7BCKXUdZQ" messageQName="DictionaryFrontend:getStationFault" messageDirection="FAULT" action="getStationFault" wsdlLocation="platform:/resource/WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_Q05tp298EeaZT7BCKXUdZQ" partName="fault" partElementName="DictionaryFrontend_1:getStationFault"/>
+        </messageConfiguration>
+        <context xmi:id="_Q06UsG98EeaZT7BCKXUdZQ">
+          <inputMapping xmi:id="_Q06UsW98EeaZT7BCKXUdZQ"/>
+          <outputMapping xmi:id="_Q06Usm98EeaZT7BCKXUdZQ" direction="OUTPUT"/>
+          <faultMappings xmi:id="_Q067wG98EeaZT7BCKXUdZQ" direction="FAULT" faultName="getStationFault"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Q067wW98EeaZT7BCKXUdZQ" bindingName="SOAPBinding"/>
+  </sca:service>
+  <sca:property xmi:id="_-HuHsG95EeaZT7BCKXUdZQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H3RoG95EeaZT7BCKXUdZQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H5t4G95EeaZT7BCKXUdZQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H68AG95EeaZT7BCKXUdZQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H8KIG95EeaZT7BCKXUdZQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H8xMG95EeaZT7BCKXUdZQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H9_UG95EeaZT7BCKXUdZQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-H_NcG95EeaZT7BCKXUdZQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-IAbkG95EeaZT7BCKXUdZQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_Z6XvQG96EeaZT7BCKXUdZQ" name="ComponentDictionaryServiceProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z6YWUG96EeaZT7BCKXUdZQ" processName="dictionary.frontend.DictionaryServiceProcess"/>
+    <sca:service xmi:id="_dSe6kG96EeaZT7BCKXUdZQ" name="IDictionary">
+      <sca:interface.wsdl xmi:id="_dSgIsG96EeaZT7BCKXUdZQ" interface="http://www.mtjakobczyk.pl/contracts/DictionaryFrontend/#wsdl.interface(IDictionary)" scaext:wsdlLocation="../../WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
