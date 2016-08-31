@@ -14,4 +14,5 @@
   <sca:property xmi:id="_DAjasG-BEeaZT7BCKXUdZQ" name="/JDBC/Password" type="property:password" scaext:simpleValue="#!/tHayxiq1NM9s/s+NA5cBQ==" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_GWQLMG-BEeaZT7BCKXUdZQ" name="/JDBC/URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_WYh8AG-BEeaZT7BCKXUdZQ" name="/JDBC/Driver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_XDSV8G-REeapP50xdCHHAA" name="/JMS/URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
 </sca:composite>

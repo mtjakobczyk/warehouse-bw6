@@ -73,5 +73,21 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
+		<globalVariable>
+			<name>UpdateDictionaryQueue</name>
+			<value>warsaw.warehouse.dictionary.update</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>UpdateDictionarySelector</name>
+			<value>Command in (&apos;ADD&apos;,&apos;DELETE&apos;,&apos;UPDATE&apos;)</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
 	</globalVariables>
 </repository>

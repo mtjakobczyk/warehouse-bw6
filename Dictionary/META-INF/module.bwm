@@ -34,10 +34,15 @@
   <sca:property xmi:id="_-H9_UG95EeaZT7BCKXUdZQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_-H_NcG95EeaZT7BCKXUdZQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_-IAbkG95EeaZT7BCKXUdZQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_0lw8YG-REeapP50xdCHHAA" name="UpdateDictionaryQueue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VCqQEG-TEeapP50xdCHHAA" name="UpdateDictionarySelector" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_Z6XvQG96EeaZT7BCKXUdZQ" name="ComponentDictionaryServiceProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z6YWUG96EeaZT7BCKXUdZQ" processName="dictionary.frontend.DictionaryServiceProcess"/>
     <sca:service xmi:id="_dSe6kG96EeaZT7BCKXUdZQ" name="IDictionary">
       <sca:interface.wsdl xmi:id="_dSgIsG96EeaZT7BCKXUdZQ" interface="http://www.mtjakobczyk.pl/contracts/DictionaryFrontend/#wsdl.interface(IDictionary)" scaext:wsdlLocation="../../WarehouseShared/Service%20Descriptors/DictionaryFrontend.abstract.wsdl"/>
     </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_8B5zQG-QEeapP50xdCHHAA" name="ComponentUpdateDictionaryProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_8B5zQW-QEeapP50xdCHHAA" processName="dictionary.backend.UpdateDictionaryProcess"/>
   </sca:component>
 </sca:composite>
