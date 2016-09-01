@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="www.tibco.com/psg/field/mjakobcz/Warehouse/Dictionary/schemas/StationSchema" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ss="www.tibco.com/psg/field/mjakobcz/Warehouse/Dictionary/schemas/StationSchema">
+
+    <complexType name="Station">
+    	<attribute name="code" type="string"></attribute>
+    	<attribute name="stationName" type="string"></attribute>
+    	<attribute name="active" type="boolean"></attribute>
+    </complexType>
+
+
+    <complexType name="Area">
+    	<sequence>
+    		<element ref="ss:Station" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="areaName" type="string"></attribute>
+    </complexType>
+    
+
+    <element name="Station" type="ss:Station"></element>
+
+    <element name="Area" type="ss:Area"></element>
+
+
+    <element name="Areas">
+    	<complexType>
+    		<sequence>
+    			<element ref="ss:Area" minOccurs="0" maxOccurs="unbounded"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

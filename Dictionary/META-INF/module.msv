@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
-  <moduleSharedVariables/>
+  <moduleSharedVariables>
+    <moduleSharedVariable name="areasSV" type="{www.tibco.com/psg/field/mjakobcz/Warehouse/Dictionary/schemas/StationSchema}Areas" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="www.tibco.com/psg/field/mjakobcz/Warehouse/Dictionary/schemas/StationSchema" location="../Schemas/Dictionary.xsd"/>
 </msv:DocumentRoot>

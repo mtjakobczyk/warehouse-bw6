@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ss:Areas xmlns:ss="www.tibco.com/psg/field/mjakobcz/Warehouse/Dictionary/schemas/StationSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.tibco.com/psg/field/mjakobcz/Warehouse/Dictionary/schemas/StationSchema Dictionary.xsd ">
+	<ss:Area areaName="North Poland">
+	  <ss:Station active="true" code="GDA" stationName="Gdansk"/>
+	  <ss:Station active="true" code="GDY" stationName="Gdynia"/>
+	  <ss:Station active="false" code="SOP" stationName="Sopot"/>
+	</ss:Area>
+</ss:Areas>
